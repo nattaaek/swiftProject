@@ -18,8 +18,13 @@ class AuthorizeViewController: UIViewController {
     
     // change view to register viewcontroller
     @IBAction func signup(_ sender: Any) {
-        let vc = UIStoryboard(name: "welcome", bundle: nil)
-        let newViewController = vc.instantiateViewController(withIdentifier: "register") as! RegisterViewController
+        let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "register") as! RegisterViewController
+        self.present(newViewController, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func login(_ sender: Any) {
+        let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "login") as! LoginViewController
         self.present(newViewController, animated: true, completion: nil)
     }
 }

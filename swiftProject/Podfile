@@ -7,6 +7,8 @@ target 'swiftProject' do
   pod ‘Firebase/Core’
   pod ‘Firebase/Auth’
 
+  pod ‘FirebaseUI/Google’
+  pod ‘FirebaseUI/Facebook’	
   # Pods for swiftProject
 
 end

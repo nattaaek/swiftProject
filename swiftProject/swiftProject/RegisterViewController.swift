@@ -9,13 +9,22 @@
 import UIKit
 import Firebase
 import FirebaseAuth
-
+import FirebaseAuthUI
+import FirebaseGoogleAuthUI
 
 class RegisterViewController: UIViewController {
 
+    
+    @IBAction func email_register(_ sender: Any) {
+        let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "email_register") as! EmailRegisterViewController
+        self.present(nextViewController, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+    }
+    @IBAction func loginAction(_ sender: Any) {
+        let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "login") as! LoginViewController
+        self.present(nextViewController, animated: true, completion: nil)
     }
 }
