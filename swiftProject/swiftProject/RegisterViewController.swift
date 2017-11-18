@@ -9,8 +9,6 @@
 import UIKit
 import Firebase
 import FirebaseAuth
-import FirebaseAuthUI
-import FirebaseGoogleAuthUI
 
 class RegisterViewController: UIViewController {
 

@@ -13,13 +13,19 @@
 		4813F0091FBC888D0016FD73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4813F0071FBC888D0016FD73 /* LaunchScreen.storyboard */; };
 		485E2BD71FBE0DDD00E2207F /* AuthorizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485E2BD61FBE0DDD00E2207F /* AuthorizeViewController.swift */; };
 		485E2BD91FBE0F4200E2207F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485E2BD81FBE0F4200E2207F /* RegisterViewController.swift */; };
+		48694F411FC04D9800901C93 /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48694F401FC04D9800901C93 /* MarketTableViewCell.swift */; };
+		48694F431FC054A100901C93 /* vegetable.png in Resources */ = {isa = PBXBuildFile; fileRef = 48694F421FC054A100901C93 /* vegetable.png */; };
+		48694F451FC054AB00901C93 /* fruit.png in Resources */ = {isa = PBXBuildFile; fileRef = 48694F441FC054AB00901C93 /* fruit.png */; };
+		48694F471FC054B400901C93 /* animal.png in Resources */ = {isa = PBXBuildFile; fileRef = 48694F461FC054B400901C93 /* animal.png */; };
+		48694F4A1FC05A6F00901C93 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48694F491FC05A6F00901C93 /* ProductCollectionViewCell.swift */; };
+		48694F4C1FC05B9E00901C93 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48694F4B1FC05B9E00901C93 /* ProductViewController.swift */; };
+		48694F4E1FC0617A00901C93 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48694F4D1FC0617A00901C93 /* GoogleService-Info.plist */; };
 		48BAA7EA1FBE9F42004D254C /* EmailRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAA7E91FBE9F42004D254C /* EmailRegisterViewController.swift */; };
 		48BAA7EC1FBEAE08004D254C /* EmailRegister2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAA7EB1FBEAE07004D254C /* EmailRegister2ViewController.swift */; };
 		48BAA7EE1FBEBB45004D254C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAA7ED1FBEBB45004D254C /* HomeViewController.swift */; };
 		48BAA7F01FBEC36D004D254C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAA7EF1FBEC36D004D254C /* LoginViewController.swift */; };
 		48BAA7F21FBEDE27004D254C /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAA7F11FBEDE27004D254C /* ResetPasswordViewController.swift */; };
 		48BAA7F41FBEEA5A004D254C /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAA7F31FBEEA5A004D254C /* LogoutViewController.swift */; };
-		48BAA7F61FBF05F0004D254C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48BAA7F51FBF05F0004D254C /* GoogleService-Info.plist */; };
 		983FAC9722DE5051F16565DC /* Pods_swiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8706B9EF41AF665C2672E396 /* Pods_swiftProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,13 +39,19 @@
 		4813F00A1FBC888D0016FD73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		485E2BD61FBE0DDD00E2207F /* AuthorizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeViewController.swift; sourceTree = "<group>"; };
 		485E2BD81FBE0F4200E2207F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		48694F401FC04D9800901C93 /* MarketTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
+		48694F421FC054A100901C93 /* vegetable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegetable.png; sourceTree = "<group>"; };
+		48694F441FC054AB00901C93 /* fruit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit.png; sourceTree = "<group>"; };
+		48694F461FC054B400901C93 /* animal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal.png; sourceTree = "<group>"; };
+		48694F491FC05A6F00901C93 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		48694F4B1FC05B9E00901C93 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		48694F4D1FC0617A00901C93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		48BAA7E91FBE9F42004D254C /* EmailRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailRegisterViewController.swift; sourceTree = "<group>"; };
 		48BAA7EB1FBEAE07004D254C /* EmailRegister2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailRegister2ViewController.swift; sourceTree = "<group>"; };
 		48BAA7ED1FBEBB45004D254C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		48BAA7EF1FBEC36D004D254C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		48BAA7F11FBEDE27004D254C /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		48BAA7F31FBEEA5A004D254C /* LogoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
-		48BAA7F51FBF05F0004D254C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8706B9EF41AF665C2672E396 /* Pods_swiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B033CE5DD2FE67F57967C057 /* Pods-swiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftProject/Pods-swiftProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,15 +96,29 @@
 				48BAA7ED1FBEBB45004D254C /* HomeViewController.swift */,
 				48BAA7F31FBEEA5A004D254C /* LogoutViewController.swift */,
 				4813F0021FBC888D0016FD73 /* Main.storyboard */,
+				48694F4B1FC05B9E00901C93 /* ProductViewController.swift */,
+				48694F491FC05A6F00901C93 /* ProductCollectionViewCell.swift */,
+				48694F401FC04D9800901C93 /* MarketTableViewCell.swift */,
 				48BAA7EF1FBEC36D004D254C /* LoginViewController.swift */,
 				48BAA7EB1FBEAE07004D254C /* EmailRegister2ViewController.swift */,
 				485E2BD61FBE0DDD00E2207F /* AuthorizeViewController.swift */,
 				4813F0051FBC888D0016FD73 /* Assets.xcassets */,
+				48694F481FC0585A00901C93 /* assets */,
 				4813F0071FBC888D0016FD73 /* LaunchScreen.storyboard */,
-				48BAA7F51FBF05F0004D254C /* GoogleService-Info.plist */,
+				48694F4D1FC0617A00901C93 /* GoogleService-Info.plist */,
 				4813F00A1FBC888D0016FD73 /* Info.plist */,
 			);
 			path = swiftProject;
+			sourceTree = "<group>";
+		};
+		48694F481FC0585A00901C93 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				48694F421FC054A100901C93 /* vegetable.png */,
+				48694F441FC054AB00901C93 /* fruit.png */,
+				48694F461FC054B400901C93 /* animal.png */,
+			);
+			name = assets;
 			sourceTree = "<group>";
 		};
 		62258E1FDCCFB07DE6050D93 /* Frameworks */ = {
@@ -175,9 +201,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4813F0091FBC888D0016FD73 /* LaunchScreen.storyboard in Resources */,
-				48BAA7F61FBF05F0004D254C /* GoogleService-Info.plist in Resources */,
+				48694F431FC054A100901C93 /* vegetable.png in Resources */,
+				48694F471FC054B400901C93 /* animal.png in Resources */,
+				48694F451FC054AB00901C93 /* fruit.png in Resources */,
 				4813F0061FBC888D0016FD73 /* Assets.xcassets in Resources */,
 				4813F0041FBC888D0016FD73 /* Main.storyboard in Resources */,
+				48694F4E1FC0617A00901C93 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,22 +259,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-swiftProject/Pods-swiftProject-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +285,11 @@
 			files = (
 				48BAA7F01FBEC36D004D254C /* LoginViewController.swift in Sources */,
 				48BAA7EC1FBEAE08004D254C /* EmailRegister2ViewController.swift in Sources */,
+				48694F4A1FC05A6F00901C93 /* ProductCollectionViewCell.swift in Sources */,
 				48BAA7EA1FBE9F42004D254C /* EmailRegisterViewController.swift in Sources */,
+				48694F411FC04D9800901C93 /* MarketTableViewCell.swift in Sources */,
 				48BAA7F21FBEDE27004D254C /* ResetPasswordViewController.swift in Sources */,
+				48694F4C1FC05B9E00901C93 /* ProductViewController.swift in Sources */,
 				4813EFFF1FBC888D0016FD73 /* AppDelegate.swift in Sources */,
 				485E2BD71FBE0DDD00E2207F /* AuthorizeViewController.swift in Sources */,
 				485E2BD91FBE0F4200E2207F /* RegisterViewController.swift in Sources */,

@@ -6,9 +6,7 @@ target 'swiftProject' do
   use_frameworks!
   pod ‘Firebase/Core’
   pod ‘Firebase/Auth’
-
-  pod ‘FirebaseUI/Google’
-  pod ‘FirebaseUI/Facebook’	
+  pod ‘Firebase/Database’	
   # Pods for swiftProject
 
 end
