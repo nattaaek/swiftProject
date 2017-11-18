@@ -34,16 +34,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        marketSelected = market[indexPath.row]
-
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
         if segue.identifier == "marketSelected" {
             let vc = segue.destination as! ProductViewController
-            vc.userChose = marketSelected
+            vc.userChose = market[(table.indexPathForSelectedRow?.row)!]
         }
     }
     
