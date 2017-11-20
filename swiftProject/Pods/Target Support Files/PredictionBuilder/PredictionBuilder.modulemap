@@ -1,0 +1,6 @@
+framework module PredictionBuilder {
+  umbrella header "PredictionBuilder-umbrella.h"
+
+  export *
+  module * { export * }
+}
