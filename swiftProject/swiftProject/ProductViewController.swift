@@ -75,6 +75,8 @@ class ProductViewController: UIViewController, UICollectionViewDelegate, UIColle
             let vc = segue.destination as! ProductDetailViewController
             
             vc.name = productName[indexPath.row] as String
+            vc.price = productPrice[indexPath.row] as String
+            vc.image = productImage[indexPath.row] as String
         }
     }
 
