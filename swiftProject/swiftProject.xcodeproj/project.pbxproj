@@ -11,6 +11,7 @@
 		4813F0041FBC888D0016FD73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4813F0021FBC888D0016FD73 /* Main.storyboard */; };
 		4813F0061FBC888D0016FD73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4813F0051FBC888D0016FD73 /* Assets.xcassets */; };
 		4813F0091FBC888D0016FD73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4813F0071FBC888D0016FD73 /* LaunchScreen.storyboard */; };
+		4814B0ED1FC1E33D0060A869 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4814B0EC1FC1E33D0060A869 /* bg1.png */; };
 		485E2BD71FBE0DDD00E2207F /* AuthorizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485E2BD61FBE0DDD00E2207F /* AuthorizeViewController.swift */; };
 		485E2BD91FBE0F4200E2207F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485E2BD81FBE0F4200E2207F /* RegisterViewController.swift */; };
 		48694F411FC04D9800901C93 /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48694F401FC04D9800901C93 /* MarketTableViewCell.swift */; };
@@ -20,6 +21,7 @@
 		48694F4A1FC05A6F00901C93 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48694F491FC05A6F00901C93 /* ProductCollectionViewCell.swift */; };
 		48694F4C1FC05B9E00901C93 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48694F4B1FC05B9E00901C93 /* ProductViewController.swift */; };
 		48694F4E1FC0617A00901C93 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48694F4D1FC0617A00901C93 /* GoogleService-Info.plist */; };
+		48694F501FC0C41800901C93 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48694F4F1FC0C41800901C93 /* ProductDetailViewController.swift */; };
 		48BAA7EA1FBE9F42004D254C /* EmailRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAA7E91FBE9F42004D254C /* EmailRegisterViewController.swift */; };
 		48BAA7EC1FBEAE08004D254C /* EmailRegister2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAA7EB1FBEAE07004D254C /* EmailRegister2ViewController.swift */; };
 		48BAA7EE1FBEBB45004D254C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAA7ED1FBEBB45004D254C /* HomeViewController.swift */; };
@@ -37,6 +39,7 @@
 		4813F0051FBC888D0016FD73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4813F0081FBC888D0016FD73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4813F00A1FBC888D0016FD73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4814B0EC1FC1E33D0060A869 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
 		485E2BD61FBE0DDD00E2207F /* AuthorizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeViewController.swift; sourceTree = "<group>"; };
 		485E2BD81FBE0F4200E2207F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		48694F401FC04D9800901C93 /* MarketTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		48694F491FC05A6F00901C93 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		48694F4B1FC05B9E00901C93 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		48694F4D1FC0617A00901C93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		48694F4F1FC0C41800901C93 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		48BAA7E91FBE9F42004D254C /* EmailRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailRegisterViewController.swift; sourceTree = "<group>"; };
 		48BAA7EB1FBEAE07004D254C /* EmailRegister2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailRegister2ViewController.swift; sourceTree = "<group>"; };
 		48BAA7ED1FBEBB45004D254C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 				485E2BD81FBE0F4200E2207F /* RegisterViewController.swift */,
 				48BAA7F11FBEDE27004D254C /* ResetPasswordViewController.swift */,
 				48BAA7E91FBE9F42004D254C /* EmailRegisterViewController.swift */,
+				48694F4F1FC0C41800901C93 /* ProductDetailViewController.swift */,
 				48BAA7ED1FBEBB45004D254C /* HomeViewController.swift */,
 				48BAA7F31FBEEA5A004D254C /* LogoutViewController.swift */,
 				4813F0021FBC888D0016FD73 /* Main.storyboard */,
@@ -114,6 +119,7 @@
 		48694F481FC0585A00901C93 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				4814B0EC1FC1E33D0060A869 /* bg1.png */,
 				48694F421FC054A100901C93 /* vegetable.png */,
 				48694F441FC054AB00901C93 /* fruit.png */,
 				48694F461FC054B400901C93 /* animal.png */,
@@ -203,6 +209,7 @@
 				4813F0091FBC888D0016FD73 /* LaunchScreen.storyboard in Resources */,
 				48694F431FC054A100901C93 /* vegetable.png in Resources */,
 				48694F471FC054B400901C93 /* animal.png in Resources */,
+				4814B0ED1FC1E33D0060A869 /* bg1.png in Resources */,
 				48694F451FC054AB00901C93 /* fruit.png in Resources */,
 				4813F0061FBC888D0016FD73 /* Assets.xcassets in Resources */,
 				4813F0041FBC888D0016FD73 /* Main.storyboard in Resources */,
@@ -220,9 +227,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-swiftProject/Pods-swiftProject-resources.sh",
-				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
-				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseFacebookAuthUI.bundle,
-				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseGoogleAuthUI.bundle,
+				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
+				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseGoogleAuthUI.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -261,6 +268,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-swiftProject/Pods-swiftProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/PredictionBuilder/PredictionBuilder.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -268,6 +276,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PredictionBuilder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -287,6 +296,7 @@
 				48BAA7EC1FBEAE08004D254C /* EmailRegister2ViewController.swift in Sources */,
 				48694F4A1FC05A6F00901C93 /* ProductCollectionViewCell.swift in Sources */,
 				48BAA7EA1FBE9F42004D254C /* EmailRegisterViewController.swift in Sources */,
+				48694F501FC0C41800901C93 /* ProductDetailViewController.swift in Sources */,
 				48694F411FC04D9800901C93 /* MarketTableViewCell.swift in Sources */,
 				48BAA7F21FBEDE27004D254C /* ResetPasswordViewController.swift in Sources */,
 				48694F4C1FC05B9E00901C93 /* ProductViewController.swift in Sources */,

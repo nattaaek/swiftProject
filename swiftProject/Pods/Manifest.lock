@@ -42,11 +42,13 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - PredictionBuilder (1.0.1)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - PredictionBuilder
 
 SPEC CHECKSUMS:
   Firebase: 3e92884a63e8f76d107c43a67d2ab9071e1eda10
@@ -59,7 +61,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
   leveldb-library: 10fb39c39e243db4af1828441162405bbcec1404
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  PredictionBuilder: 0fd2ad43ade72c21fbd7a04b09015463cdeb1989
 
-PODFILE CHECKSUM: bba6969a50a46bfad5fa1b941f6c11c617a83c65
+PODFILE CHECKSUM: 77109cb8fc8033253b5d82643273f2b5c5bf6137
 
 COCOAPODS: 1.3.1
