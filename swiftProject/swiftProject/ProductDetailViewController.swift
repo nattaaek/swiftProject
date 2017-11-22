@@ -32,6 +32,8 @@ class ProductDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
+        print(name)
+        print(price)
         productName.text = name
         productPrice.text = price
 
