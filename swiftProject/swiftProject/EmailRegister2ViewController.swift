@@ -12,6 +12,8 @@ import FirebaseAuth
 
 class EmailRegister2ViewController: UIViewController {
 
+    @IBOutlet weak var line: UILabel!
+    @IBOutlet weak var btnSignUp: UIButton!
     var inputEmail = ""
     var inputPhone = ""
     var handle: AuthStateDidChangeListenerHandle?
@@ -28,6 +30,36 @@ class EmailRegister2ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // button section
+        let gradient = CAGradientLayer()
+        let colorTop = UIColor(red: 67/255, green: 206/255, blue: 162/255, alpha: 1).cgColor
+        let colorBottom = UIColor(red: 24/255, green: 90/255, blue: 157/255, alpha: 1).cgColor
+        
+        gradient.colors = [colorTop, colorBottom]
+        gradient.startPoint = CGPoint(x: 0, y: 0.5)
+        gradient.endPoint = CGPoint(x: 1, y: 0.5)
+        gradient.frame = btnSignUp.bounds
+        gradient.cornerRadius = gradient.frame.height/2
+        
+        let myGraident = UIImage(named: "textgradient.png")
+        line.textColor = UIColor(patternImage: myGraident!)
+        
+        btnSignUp.layer.masksToBounds = false
+        btnSignUp.layer.shadowColor = UIColor.black.cgColor
+        btnSignUp.layer.shadowOpacity = 0.2
+        btnSignUp.layer.shadowOffset = CGSize(width: 0, height: 5)
+        btnSignUp.layer.cornerRadius = btnSignUp.frame.height/2
+        btnSignUp.clipsToBounds = true
+        btnSignUp.layer.shadowPath = UIBezierPath(rect: btnSignUp.bounds).cgPath
+        btnSignUp.layer.shouldRasterize = true
+        btnSignUp.layer.rasterizationScale = UIScreen.main.scale
+        btnSignUp.layer.borderWidth = 3
+        btnSignUp.layer.borderColor = UIColor(red: 205/255, green: 219/255, blue: 232/255, alpha: 1).cgColor
+        btnSignUp.layer.addSublayer(gradient)
+        
+        
+         // background section
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: "bg6.png")?.draw(in: self.view.bounds)
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!

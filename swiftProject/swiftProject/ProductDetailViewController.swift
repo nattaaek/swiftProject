@@ -42,7 +42,7 @@ class ProductDetailViewController: UIViewController {
         print(name)
         print(price)
         productName.text = name
-        productPrice.text = price
+        productPrice.text = price + " Baht/Kg"
         
         productImage.image = UIImage(named: image)
         handle = ref?.child("price").child(name).observe(.value, with: {(snapshot) in
@@ -63,7 +63,7 @@ class ProductDetailViewController: UIViewController {
             } catch let msg {
                 print(msg)
             }
-            self.productPredict.text = String(format: "%.2f", self.predict)
+            self.productPredict.text = String(format: "%.2f Baht/Kg", self.predict)
         })
 
         

@@ -49,7 +49,7 @@ class ProductViewController: UIViewController, UICollectionViewDelegate, UIColle
             self.productImage.append(img)
             self.collection.reloadData()
          let price = value?["price"] as? String ?? ""
-            self.productPrice.append(price + " Baht")
+            self.productPrice.append(price)
             self.collection.reloadData()
         
          }))!

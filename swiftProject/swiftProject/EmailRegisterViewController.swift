@@ -66,7 +66,8 @@ class EmailRegisterViewController: UIViewController {
         txtEmail.layer.addSublayer(gradient2)
         
         txtPhone.layer.cornerRadius = 15
-        
+        txtPhone.layer.borderWidth = 1
+        txtPhone.layer.borderColor = UIColor(red: 211/255, green: 225/255, blue: 236/255, alpha: 1).cgColor
         
         
         // Background Area

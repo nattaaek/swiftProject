@@ -11,7 +11,7 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var market = ["vegetable","fruit","animals"]
+    var market = ["vegetable","fruit","animal"]
     var marketSelected = ""
     @IBOutlet weak var table: UITableView!
     
