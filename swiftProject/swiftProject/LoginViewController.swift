@@ -17,6 +17,11 @@ class LoginViewController: UIViewController {
     var handle: AuthStateDidChangeListenerHandle?
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "bg3.png")?.draw(in: self.view.bounds)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        self.view.backgroundColor = UIColor(patternImage: image)
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {

@@ -31,10 +31,17 @@ class ProductDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "bg10.png")?.draw(in: self.view.bounds)
+        let imagebg: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        self.view.backgroundColor = UIColor(patternImage: imagebg)
+        
         ref = Database.database().reference()
         productName.text = name
         productPrice.text = price
-
+        
         productImage.image = UIImage(named: image)
         handle = ref?.child("price").child(name).observe(.value, with: {(snapshot) in
             var key: Double = 1

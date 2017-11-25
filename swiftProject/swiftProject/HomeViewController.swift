@@ -11,14 +11,18 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var market = ["vegetable","fruit","animal"]
+    var market = ["vegetable","fruit","animals"]
     var marketSelected = ""
     @IBOutlet weak var table: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "bg8.png")?.draw(in: self.view.bounds)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        self.view.backgroundColor = UIColor(patternImage: image)
         // Do any additional setup after loading the view.
     }
     
