@@ -24,6 +24,12 @@ class ProductViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "bg9.png")?.draw(in: self.view.bounds)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        self.view.backgroundColor = UIColor(patternImage: image)
 
         collection.delegate = self
         collection.dataSource = self
@@ -43,7 +49,7 @@ class ProductViewController: UIViewController, UICollectionViewDelegate, UIColle
             self.productImage.append(img)
             self.collection.reloadData()
          let price = value?["price"] as? String ?? ""
-            self.productPrice.append(price)
+            self.productPrice.append(price + " Baht")
             self.collection.reloadData()
         
          }))!
@@ -59,15 +65,28 @@ class ProductViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-     
-
         let cell = collection.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ProductCollectionViewCell
-
+        
+        cell.layer.borderWidth = 2
+        cell.layer.borderColor = UIColor(red: 218/255, green: 245/255, blue: 236/255, alpha: 1.0).cgColor
+        cell.layer.backgroundColor = UIColor.white.cgColor
+        cell.layer.masksToBounds = false
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOpacity = 0.3
+        cell.layer.shadowOffset = CGSize(width: 10, height: 10)
+        cell.layer.shadowRadius = 5
+        
+        cell.layer.shadowPath = UIBezierPath(rect: cell.bounds).cgPath
+        cell.layer.shouldRasterize = true
+        cell.layer.rasterizationScale = UIScreen.main.scale
+        
+        
         cell.productName.text = productName[indexPath.row]
         cell.productPrice.text = productPrice[indexPath.row]
-        cell.productImage.image = UIImage(named: productImage[indexPath.row])
+        cell.productImage.image = UIImage(named: productImage[indexPath.row] + ".png")
         return cell
     }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cell = sender as? UICollectionViewCell,
@@ -79,7 +98,4 @@ class ProductViewController: UIViewController, UICollectionViewDelegate, UIColle
             vc.image = productImage[indexPath.row] as String
         }
     }
-
-    
-    
 }

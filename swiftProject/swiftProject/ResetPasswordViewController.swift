@@ -25,7 +25,11 @@ class ResetPasswordViewController: UIViewController {
     @IBOutlet weak var inputEmail: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "bg4.png")?.draw(in: self.view.bounds)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        self.view.backgroundColor = UIColor(patternImage: image)
         // Do any additional setup after loading the view.
     }
 
@@ -38,6 +42,7 @@ class ResetPasswordViewController: UIViewController {
             let alert = UIAlertController(title: "Error!", message: "Please input your email address", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            
         }
         else {
             Auth.auth().sendPasswordReset(withEmail: self.inputEmail.text!, completion: {
