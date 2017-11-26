@@ -50,20 +50,12 @@ class EmailRegisterViewController: UIViewController {
         
         //textBox Area
         
-        let gradient2 = CAGradientLayer()
-        let colorTop2 = UIColor(red: 217/255, green: 242/255, blue: 236/255, alpha: 1)
-        let colorBottom2 = UIColor(red: 211/255, green: 225/255, blue: 236/255, alpha: 1)
-        
-        gradient2.colors = [colorTop2, colorBottom2]
-        gradient2.startPoint = CGPoint(x: 0, y: 0.5)
-        gradient2.endPoint = CGPoint(x: 1, y: 0.5)
-        gradient2.frame = txtEmail.bounds
-        gradient2.cornerRadius = 15
         
         txtEmail.layer.cornerRadius = 15
         txtEmail.layer.borderWidth = 1
         txtEmail.layer.borderColor = UIColor(red: 211/255, green: 225/255, blue: 236/255, alpha: 1).cgColor
-        txtEmail.layer.addSublayer(gradient2)
+        txtEmail.backgroundColor = UIColor(patternImage: UIImage(named: "txtGradient.png")!)
+        
         
         txtPhone.layer.cornerRadius = 15
         txtPhone.layer.borderWidth = 1

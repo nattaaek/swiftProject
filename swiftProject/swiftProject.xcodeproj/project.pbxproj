@@ -10,7 +10,6 @@
 		480B21FA1FC993E10012627A /* bg7.png in Resources */ = {isa = PBXBuildFile; fileRef = 480B21EE1FC993E10012627A /* bg7.png */; };
 		480B21FB1FC993E10012627A /* bg12.png in Resources */ = {isa = PBXBuildFile; fileRef = 480B21EF1FC993E10012627A /* bg12.png */; };
 		480B21FC1FC993E10012627A /* bg11.png in Resources */ = {isa = PBXBuildFile; fileRef = 480B21F01FC993E10012627A /* bg11.png */; };
-		480B21FD1FC993E10012627A /* bg10.png in Resources */ = {isa = PBXBuildFile; fileRef = 480B21F11FC993E10012627A /* bg10.png */; };
 		480B21FE1FC993E10012627A /* bg5.png in Resources */ = {isa = PBXBuildFile; fileRef = 480B21F21FC993E10012627A /* bg5.png */; };
 		480B21FF1FC993E10012627A /* bg9.png in Resources */ = {isa = PBXBuildFile; fileRef = 480B21F31FC993E10012627A /* bg9.png */; };
 		480B22001FC993E10012627A /* bg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 480B21F41FC993E10012627A /* bg4.png */; };
@@ -24,6 +23,8 @@
 		4813EFFF1FBC888D0016FD73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4813EFFE1FBC888D0016FD73 /* AppDelegate.swift */; };
 		4813F0061FBC888D0016FD73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4813F0051FBC888D0016FD73 /* Assets.xcassets */; };
 		4813F0091FBC888D0016FD73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4813F0071FBC888D0016FD73 /* LaunchScreen.storyboard */; };
+		481A3B3C1FCA9DA100E2549A /* bg10.png in Resources */ = {isa = PBXBuildFile; fileRef = 481A3B3B1FCA9DA100E2549A /* bg10.png */; };
+		481A3B3E1FCA9DD500E2549A /* txtGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 481A3B3D1FCA9DD500E2549A /* txtGradient.png */; };
 		485E2BD71FBE0DDD00E2207F /* AuthorizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485E2BD61FBE0DDD00E2207F /* AuthorizeViewController.swift */; };
 		485E2BD91FBE0F4200E2207F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485E2BD81FBE0F4200E2207F /* RegisterViewController.swift */; };
 		48694F411FC04D9800901C93 /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48694F401FC04D9800901C93 /* MarketTableViewCell.swift */; };
@@ -103,7 +104,6 @@
 		480B21EE1FC993E10012627A /* bg7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg7.png; sourceTree = "<group>"; };
 		480B21EF1FC993E10012627A /* bg12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg12.png; sourceTree = "<group>"; };
 		480B21F01FC993E10012627A /* bg11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg11.png; sourceTree = "<group>"; };
-		480B21F11FC993E10012627A /* bg10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg10.png; sourceTree = "<group>"; };
 		480B21F21FC993E10012627A /* bg5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg5.png; sourceTree = "<group>"; };
 		480B21F31FC993E10012627A /* bg9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg9.png; sourceTree = "<group>"; };
 		480B21F41FC993E10012627A /* bg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg4.png; sourceTree = "<group>"; };
@@ -119,6 +119,8 @@
 		4813F0051FBC888D0016FD73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4813F0081FBC888D0016FD73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4813F00A1FBC888D0016FD73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		481A3B3B1FCA9DA100E2549A /* bg10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg10.png; sourceTree = "<group>"; };
+		481A3B3D1FCA9DD500E2549A /* txtGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = txtGradient.png; sourceTree = "<group>"; };
 		485E2BD61FBE0DDD00E2207F /* AuthorizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeViewController.swift; sourceTree = "<group>"; };
 		485E2BD81FBE0F4200E2207F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		48694F401FC04D9800901C93 /* MarketTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
@@ -258,14 +260,15 @@
 			children = (
 				486B6A1A1FC9C2AB008A7164 /* avatar.png */,
 				480B22061FC99AB80012627A /* textgradient.png */,
+				481A3B3D1FCA9DD500E2549A /* txtGradient.png */,
 				486B6A1C1FC9E19A008A7164 /* setting.png */,
 				486B6A1E1FC9E1E0008A7164 /* home.png */,
 				480B21EE1FC993E10012627A /* bg7.png */,
 				480B21EF1FC993E10012627A /* bg12.png */,
 				486B6A201FC9E1E5008A7164 /* map.png */,
 				480B21F01FC993E10012627A /* bg11.png */,
-				480B21F11FC993E10012627A /* bg10.png */,
 				480B21F21FC993E10012627A /* bg5.png */,
+				481A3B3B1FCA9DA100E2549A /* bg10.png */,
 				480B21F31FC993E10012627A /* bg9.png */,
 				480B21F41FC993E10012627A /* bg4.png */,
 				480B21F51FC993E10012627A /* bg8.png */,
@@ -417,6 +420,7 @@
 			files = (
 				480B22031FC993E10012627A /* bg3.png in Resources */,
 				480B21FA1FC993E10012627A /* bg7.png in Resources */,
+				481A3B3E1FCA9DD500E2549A /* txtGradient.png in Resources */,
 				48EE3CDA1FC8A09F001F63C4 /* TitilliumWeb-Regular.ttf in Resources */,
 				486B6A1B1FC9C2AB008A7164 /* avatar.png in Resources */,
 				486B6A211FC9E1E5008A7164 /* map.png in Resources */,
@@ -439,6 +443,7 @@
 				480B22011FC993E10012627A /* bg8.png in Resources */,
 				4870DC8A1FC86F7200254C4B /* eggplant.png in Resources */,
 				486B6A3D1FC9EDC5008A7164 /* Icon-App-29x29@1x.png in Resources */,
+				481A3B3C1FCA9DA100E2549A /* bg10.png in Resources */,
 				4870DC951FC86F7200254C4B /* shrimp.png in Resources */,
 				4870DC941FC86F7200254C4B /* rose apple.png in Resources */,
 				486B6A4F1FC9EDC5008A7164 /* Icon-Small-50x50@2x.png in Resources */,
@@ -462,7 +467,6 @@
 				4870DC911FC86F7200254C4B /* pig.png in Resources */,
 				486B6A3B1FC9EDC5008A7164 /* Icon-App-20x20@2x.png in Resources */,
 				48EE3CDC1FC8A1C8001F63C4 /* logo.png in Resources */,
-				480B21FD1FC993E10012627A /* bg10.png in Resources */,
 				480B21FF1FC993E10012627A /* bg9.png in Resources */,
 				486B6A3F1FC9EDC5008A7164 /* Icon-App-29x29@3x.png in Resources */,
 				4870DC871FC86F7200254C4B /* corn.png in Resources */,
