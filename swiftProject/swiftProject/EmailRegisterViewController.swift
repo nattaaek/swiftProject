@@ -34,13 +34,8 @@ class EmailRegisterViewController: UIViewController {
         let myGraident = UIImage(named: "textgradient.png")
         line.textColor = UIColor(patternImage: myGraident!)
         
-        btnNext.layer.masksToBounds = false
-        btnNext.layer.shadowColor = UIColor.black.cgColor
-        btnNext.layer.shadowOpacity = 0.2
-        btnNext.layer.shadowOffset = CGSize(width: 0, height: 5)
         btnNext.layer.cornerRadius = btnNext.frame.height/2
         btnNext.clipsToBounds = true
-        btnNext.layer.shadowPath = UIBezierPath(rect: btnNext.bounds).cgPath
         btnNext.layer.shouldRasterize = true
         btnNext.layer.rasterizationScale = UIScreen.main.scale
         btnNext.layer.borderWidth = 3
@@ -60,6 +55,7 @@ class EmailRegisterViewController: UIViewController {
         txtPhone.layer.cornerRadius = 15
         txtPhone.layer.borderWidth = 1
         txtPhone.layer.borderColor = UIColor(red: 211/255, green: 225/255, blue: 236/255, alpha: 1).cgColor
+        txtPhone.backgroundColor = UIColor(patternImage: UIImage(named: "txtGradient.png")!)
         
         
         // Background Area
@@ -79,6 +75,7 @@ class EmailRegisterViewController: UIViewController {
     }
     @IBAction func nextStep(_ sender: Any) {
         let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "email_register2") as! EmailRegister2ViewController
+        // user input email = " " or phone = " "
         if userEmail.text == "" || userPhone.text == ""{
             let alert = UIAlertController(title: "Error", message: "Please insert your email and phone number please!", preferredStyle: UIAlertControllerStyle.alert)
             let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)

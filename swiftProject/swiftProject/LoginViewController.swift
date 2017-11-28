@@ -19,6 +19,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var line: UILabel!
     @IBOutlet weak var txtPassword: UITextField!
     var handle: AuthStateDidChangeListenerHandle?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,14 +35,9 @@ class LoginViewController: UIViewController {
         
         let myGraident = UIImage(named: "textgradient.png")
         line.textColor = UIColor(patternImage: myGraident!)
-        
-        btnLogin.layer.masksToBounds = false
-        btnLogin.layer.shadowColor = UIColor.black.cgColor
-        btnLogin.layer.shadowOpacity = 0.2
-        btnLogin.layer.shadowOffset = CGSize(width: 0, height: 5)
+    
         btnLogin.layer.cornerRadius = btnLogin.frame.height/2
         btnLogin.clipsToBounds = true
-        btnLogin.layer.shadowPath = UIBezierPath(rect: btnLogin.bounds).cgPath
         btnLogin.layer.shouldRasterize = true
         btnLogin.layer.rasterizationScale = UIScreen.main.scale
         btnLogin.layer.borderWidth = 3
@@ -63,11 +59,12 @@ class LoginViewController: UIViewController {
         txtUser.layer.cornerRadius = 15
         txtUser.layer.borderWidth = 1
         txtUser.layer.borderColor = UIColor(red: 211/255, green: 225/255, blue: 236/255, alpha: 1).cgColor
-        txtUser.layer.addSublayer(gradient2)
+        txtUser.backgroundColor = UIColor(patternImage: UIImage(named: "textgradient.png")!)
         
         txtPassword.layer.cornerRadius = 15
         txtPassword.layer.borderWidth = 1
         txtPassword.layer.borderColor = UIColor(red: 211/255, green: 225/255, blue: 236/255, alpha: 1).cgColor
+        txtPassword.backgroundColor = UIColor(patternImage: UIImage(named: "textgradient.png")!)
         // Background section
         
         UIGraphicsBeginImageContext(self.view.frame.size)
@@ -77,6 +74,7 @@ class LoginViewController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: image)
         // Do any additional setup after loading the view.
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         handle = Auth.auth().addStateDidChangeListener {(auth, user) in
             
@@ -108,8 +106,6 @@ class LoginViewController: UIViewController {
             Auth.auth().signIn(withEmail: self.inputUsername.text!, password: self.inputPassword.text!) { (user, error) in
                 
                 if error == nil {
-                    print("login suceesfully")
-                    
                     let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "tab") as! UITabBarController
                     self.present(nextViewController, animated: true, completion: nil)
                 }

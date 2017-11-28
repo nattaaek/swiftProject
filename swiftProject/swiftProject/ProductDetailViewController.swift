@@ -39,8 +39,6 @@ class ProductDetailViewController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: imagebg)
         
         ref = Database.database().reference()
-        print(name)
-        print(price)
         productName.text = name
         productPrice.text = price + " Baht/Kg"
         
@@ -70,7 +68,4 @@ class ProductDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func addFavoriteAction(_ sender: Any) {
-        
-    }
 }

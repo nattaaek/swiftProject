@@ -16,17 +16,25 @@ class EmailRegister2ViewController: UIViewController {
     @IBOutlet weak var btnSignUp: UIButton!
     var inputEmail = ""
     var inputPhone = ""
+    // firebase handle listener
     var handle: AuthStateDidChangeListenerHandle?
+    
+    
     
     @IBOutlet weak var inputConfirmPassword: UITextField!
     @IBOutlet weak var inputPassword: UITextField!
+    
     override func viewWillAppear(_ animated: Bool) {
+        
         handle = Auth.auth().addStateDidChangeListener {(auth, user) in
             
         }
     }
+    
     override func viewWillDisappear(_ animated: Bool) {
+        
         Auth.auth().removeStateDidChangeListener(handle!)
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,15 +53,8 @@ class EmailRegister2ViewController: UIViewController {
         let myGraident = UIImage(named: "textgradient.png")
         line.textColor = UIColor(patternImage: myGraident!)
         
-        btnSignUp.layer.masksToBounds = false
-        btnSignUp.layer.shadowColor = UIColor.black.cgColor
-        btnSignUp.layer.shadowOpacity = 0.2
-        btnSignUp.layer.shadowOffset = CGSize(width: 0, height: 5)
         btnSignUp.layer.cornerRadius = btnSignUp.frame.height/2
         btnSignUp.clipsToBounds = true
-        btnSignUp.layer.shadowPath = UIBezierPath(rect: btnSignUp.bounds).cgPath
-        btnSignUp.layer.shouldRasterize = true
-        btnSignUp.layer.rasterizationScale = UIScreen.main.scale
         btnSignUp.layer.borderWidth = 3
         btnSignUp.layer.borderColor = UIColor(red: 205/255, green: 219/255, blue: 232/255, alpha: 1).cgColor
         btnSignUp.layer.addSublayer(gradient)
@@ -73,7 +74,8 @@ class EmailRegister2ViewController: UIViewController {
         self.present(nextViewController, animated: true, completion: nil)
     }
     @IBAction func signupAction(_ sender: Any) {
-        if  inputPassword.text! == "" || inputConfirmPassword.text! == "" && inputPassword.text! == inputConfirmPassword.text {
+        
+        if  inputPassword.text! == "" || inputConfirmPassword.text! == "" {
             let alert = UIAlertController(title: "Error", message: "Please fill all information please!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
@@ -87,8 +89,6 @@ class EmailRegister2ViewController: UIViewController {
             Auth.auth().createUser(withEmail: inputEmail, password: inputPassword.text!) { (user,error) in
                 
                 if error == nil {
-                    print("Successfully")
-                    
                     let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "welcome") as! AuthorizeViewController
                     self.present(newViewController, animated: true, completion: nil)
                 }
