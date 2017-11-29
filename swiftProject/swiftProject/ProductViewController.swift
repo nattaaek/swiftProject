@@ -82,7 +82,7 @@ class ProductViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         
         cell.productName.text = productName[indexPath.row]
-        cell.productPrice.text = productPrice[indexPath.row]
+        cell.productPrice.text = "Price: " + productPrice[indexPath.row] + " Baht/Kg"
         cell.productImage.image = UIImage(named: productImage[indexPath.row] + ".png")
         return cell
     }
